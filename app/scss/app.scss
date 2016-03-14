@@ -1,0 +1,51 @@
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.usa-font-lead {
+  font-weight: normal;
+}
+.section-grey-lightest {
+  background-color: #F1F1F1;
+}
+
+.section-grey-dark {
+  background-color: #323A45;
+  color: #FFFFFF;
+}
+.section-grey {
+  background-color: #5B616B;
+  color: #FFFFFF;
+}
+.padding-only {
+  margin-top: 0;
+  padding-top: 1.5rem;
+}
+
+
+
+.img-circle {
+  border-radius: 50%;
+}
+
+
+.img-thumbnail {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2rem;
+  float: left;
+}
+
+.img-thumbnail-heading {
+  margin-top: 0;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  display: inline;
+}
+
+.img-thumbnail-text {
+  display: inline-block;
+  width: 300px;
+}
