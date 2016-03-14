@@ -8,7 +8,7 @@ Requires:
 From root directory:
 * `npm install`  
 * `bower install` - currently does nothing
-* `brunch watch --server` to run live reload server for development
+* `brunch watch --server` to run live reload server for development (`localhost:3333`)
 
 
 ####  Developing
