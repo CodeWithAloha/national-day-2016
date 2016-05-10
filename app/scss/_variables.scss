@@ -1,0 +1,34 @@
+$tiny-size: 450px;
+$mobile-size: 768px;
+
+$tiny: new-breakpoint(max-width $tiny-size 12);
+$mobile: new-breakpoint(min-width 0 max-width $mobile-size 12);
+$desktop: new-breakpoint(min-width $mobile-size+1 12);
+
+
+$blue-dark: #1A315B;
+$night: #312E33;
+$sky-dark: #166C7A;
+$gray-dark: #504B51;
+
+$true-blue: #0A3D99;
+$code-red: #EA4626;
+$sky: #51CCE0;
+$gray: #7F777E;
+
+
+$blue-bright: #4F82DB;
+$red-bright: #F46270;
+$sky-bright: #BDE5E1;
+$gray-light: #BCB1B5;
+
+$blue-light: #B8C1D1;
+$sand: #E5DCDA;
+$paper: #F9F6F4;
+
+
+$background-color: $sand;
+$link-color-unvisited: $blue-bright;
+$link-color-visited: $red-bright;
+
+$font: "Roboto", "Helvetica", "Arial", sans-serif;

@@ -1,51 +1,73 @@
-section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
+@import "bourbon/bourbon";
+@import "neat/neat";
 
-.usa-font-lead {
-  font-weight: normal;
-}
-.section-grey-lightest {
-  background-color: #F1F1F1;
-}
-
-.section-grey-dark {
-  background-color: #323A45;
-  color: #FFFFFF;
-}
-.section-grey {
-  background-color: #5B616B;
-  color: #FFFFFF;
-}
-.padding-only {
-  margin-top: 0;
-  padding-top: 1.5rem;
-}
+@import 'variables';
+@import 'base';
 
 
+body {
+  background-color: rgb(71, 69, 69);
+}
 
-.img-circle {
-  border-radius: 50%;
+.jumbotron {
+  .banner {
+    width: 75%;
+  }
+}
+
+.jumbotron-content {
+  text-align: center;
+  padding: 3rem 1rem;
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+.intro {
+  color: white;
+}
+
+.lead {
+  font-size: 2rem;
 }
 
 
-.img-thumbnail {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 2rem;
-  float: left;
+.content {
+  @include outer-container();
 }
 
-.img-thumbnail-heading {
-  margin-top: 0;
-  padding: 0;
-  margin: 0;
-  width: 300px;
-  display: inline;
+.map-div {
+  padding: 1rem;
+  @include span-columns(6);
+  @include media($mobile) {
+    @include span-columns(12);
+  }
+}
+.twitter-div {
+  text-align: center;
+  padding: 1rem;
+  @include span-columns(6);
+  @include media($mobile) {
+    @include span-columns(12);
+  }
 }
 
-.img-thumbnail-text {
-  display: inline-block;
-  width: 300px;
+
+.responsive-embedded-wrapper {
+  //Adapted from http://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-responsive-design/
+  position: relative;
+  height: 0;  //Height is obtained from the padding, so set to 0
+  overflow: hidden;
+  padding-bottom: (9 / 16) * 100%; //Aspect ratio
+  border: 1px solid $gray-light;
+  iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
