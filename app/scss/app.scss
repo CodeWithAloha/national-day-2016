@@ -74,10 +74,7 @@ body {
 
 .map-div {
   padding: 1rem;
-  @include span-columns(6);
-  @include media($mobile) {
-    @include span-columns(12);
-  }
+  @include span-columns(12);
 }
 .twitter-div {
   text-align: center;
