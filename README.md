@@ -16,8 +16,11 @@ From root directory:
 * `app/app.js` is for javascript.
 * `app/scss/app.scss` is for CSS.
 
-Currently using [USWDS](https://playbook.cio.gov/designstandards/) as the CSS framework.
-
-
 #### Building dist:
 * `brunch build --production` to build dist.
+
+#### Deploying:
+Deployment is done via gh-pages. 
+* Create a build on `master` branch.
+* Copy the files in the generated `public` folder onto the `gh-pages` branch. 
+* Push the `gh-pages` branch to deploy.
